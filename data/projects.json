@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "title": "Full-Stack E-commerce Platform",
+    "subtitle": "Built Scalable E-commerce Platform using React & Node.js",
+    "description": "A comprehensive e-commerce solution with modern UI design, secure payment processing and real-time inventory management. Features responsive design and RESTful API implementation.",
+    "technologies": ["React", "TypeScript", "Node.js", "Stripe API"],
+    "impact": "82% faster load times, $2M+ monthly transaction processed",
+    "category": "Full Stack Development",
+    "demoUrl": "#",
+    "codeUrl": "#",
+    "imageUrl": "https://via.placeholder.com/300x200/007bff/ffffff?text=E-commerce"
+  },
+  {
+    "id": 2,
+    "title": "Real-Time Analytics Dashboard",
+    "subtitle": "Developed Real-Time Analytics Dashboard (Python & D3.js)",
+    "description": "Interactive data visualization platform with real-time updates, custom charts and advanced filtering. Built with enterprise-level scalability and performance optimization.",
+    "technologies": ["Python", "D3.js", "WebSocket", "Redis"],
+    "impact": "60% performance improvement, real-time data processing",
+    "category": "Data Visualization",
+    "demoUrl": "#",
+    "codeUrl": "#",
+    "imageUrl": "https://via.placeholder.com/300x200/28a745/ffffff?text=Analytics"
+  },
+  {
+    "id": 3,
+    "title": "Security & Audit System",
+    "subtitle": "Engineered Authentication System (Node.js (React & SaaSwift))",
+    "description": "Enterprise-grade authentication and authorization system with multi-factor authentication, role-based access control, and comprehensive audit logging for maximum security.",
+    "technologies": ["React", "TypeScript", "SaaSwift", "JWT"],
+    "impact": "35% faster auth, 99.9% uptime, enhanced security",
+    "category": "Security & Auth",
+    "demoUrl": "#",
+    "codeUrl": "#",
+    "imageUrl": "https://via.placeholder.com/300x200/dc3545/ffffff?text=Security"
+  },
+  {
+    "id": 4,
+    "title": "Mobile Banking App",
+    "subtitle": "Cross-Platform Mobile Banking Application",
+    "description": "Secure mobile banking application with biometric authentication, real-time transaction processing, and intuitive user interface for seamless financial management.",
+    "technologies": ["React Native", "Node.js", "MongoDB", "Socket.io"],
+    "impact": "95% user satisfaction, 1M+ active users",
+    "category": "Mobile Development",
+    "demoUrl": "#",
+    "codeUrl": "#",
+    "imageUrl": "https://via.placeholder.com/300x200/6f42c1/ffffff?text=Mobile+Banking"
+  },
+  {
+    "id": 5,
+    "title": "AI-Powered CRM System",
+    "subtitle": "Intelligent Customer Relationship Management Platform",
+    "description": "Advanced CRM system with AI-powered lead scoring, automated email campaigns, and predictive analytics for enhanced customer engagement and sales optimization.",
+    "technologies": ["Vue.js", "Python", "TensorFlow", "PostgreSQL"],
+    "impact": "40% increase in lead conversion, automated workflow",
+    "category": "AI & Machine Learning",
+    "demoUrl": "#",
+    "codeUrl": "#",
+    "imageUrl": "https://via.placeholder.com/300x200/fd7e14/ffffff?text=AI+CRM"
+  },
+  {
+    "id": 6,
+    "title": "Cloud Infrastructure Manager",
+    "subtitle": "DevOps Automation and Infrastructure Management",
+    "description": "Comprehensive cloud infrastructure management platform with automated deployment, monitoring, and scaling capabilities for modern DevOps workflows.",
+    "technologies": ["Docker", "Kubernetes", "AWS", "Terraform"],
+    "impact": "70% deployment time reduction, 99.9% uptime",
+    "category": "DevOps & Cloud",
+    "demoUrl": "#",
+    "codeUrl": "#",
+    "imageUrl": "https://via.placeholder.com/300x200/20c997/ffffff?text=Cloud+Infra"
+  }
+]

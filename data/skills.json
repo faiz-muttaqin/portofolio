@@ -1,0 +1,38 @@
+{
+  "frontend": {
+    "title": "Frontend",
+    "skills": [
+      { "name": "React", "level": "Advanced" },
+      { "name": "TypeScript", "level": "Advanced" },
+      { "name": "JavaScript", "level": "Expert" },
+      { "name": "HTML5", "level": "Expert" },
+      { "name": "CSS3", "level": "Advanced" },
+      { "name": "Tailwind CSS", "level": "Advanced" },
+      { "name": "Vue.js", "level": "Intermediate" }
+    ]
+  },
+  "backend": {
+    "title": "Backend",
+    "skills": [
+      { "name": "Node.js", "level": "Advanced" },
+      { "name": "Python", "level": "Advanced" },
+      { "name": "Go", "level": "Intermediate" },
+      { "name": "PostgreSQL", "level": "Advanced" },
+      { "name": "MongoDB", "level": "Intermediate" },
+      { "name": "Express", "level": "Advanced" },
+      { "name": "GraphQL", "level": "Intermediate" }
+    ]
+  },
+  "tools": {
+    "title": "Tools & Cloud",
+    "skills": [
+      { "name": "Git", "level": "Expert" },
+      { "name": "Docker", "level": "Advanced" },
+      { "name": "AWS", "level": "Intermediate" },
+      { "name": "Vercel", "level": "Advanced" },
+      { "name": "Kubernetes", "level": "Intermediate" },
+      { "name": "CI/CD", "level": "Advanced" },
+      { "name": "Jest", "level": "Advanced" }
+    ]
+  }
+}

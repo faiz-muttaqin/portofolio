@@ -1,0 +1,66 @@
+{
+	"experiences": [
+		{
+			"id": 1,
+			"position": "Senior Full-Stack Developer",
+			"company": "TechCorp Solutions",
+			"period": "2023 - Present",
+			"location": "Remote",
+			"type": "Full-time",
+			"achievements": [
+				"Led development of e-commerce platform serving 500K+ users, reducing load times by 40%",
+				"Implemented secure payment processing system handling $2M+ monthly transactions",
+				"Mentored 3 junior developers and established code review best practices",
+				"Architected microservices infrastructure improving system scalability by 300%"
+			],
+			"technologies": [
+				"React",
+				"Node.js",
+				"AWS",
+				"PostgreSQL",
+				"Docker",
+				"Kubernetes"
+			],
+			"isCurrentRole": true
+		},
+		{
+			"id": 2,
+			"position": "Full Stack Developer",
+			"company": "WebAgency Pro",
+			"period": "2021 - 2023",
+			"location": "New York, NY",
+			"type": "Full-time",
+			"achievements": [
+				"Built end-to-end web applications for enterprise clients, improving data visualization performance by 50%",
+				"Developed authentication system reducing login times by 35%",
+				"Collaborated with design team to implement responsive UI components",
+				"Optimized database queries resulting in 60% faster data retrieval"
+			],
+			"technologies": [
+				"Vue.js",
+				"Express.js",
+				"MongoDB",
+				"Redis",
+				"PHP",
+				"MySQL"
+			],
+			"isCurrentRole": false
+		},
+		{
+			"id": 3,
+			"position": "Frontend Developer",
+			"company": "Digital Solutions Inc",
+			"period": "2019 - 2021",
+			"location": "Boston, MA",
+			"type": "Full-time",
+			"achievements": [
+				"Developed responsive websites for 20+ clients using modern frontend frameworks",
+				"Improved website performance scores by average of 45% using optimization techniques",
+				"Implemented accessibility standards achieving WCAG 2.1 AA compliance",
+				"Created reusable component library reducing development time by 30%"
+			],
+			"technologies": ["JavaScript", "React", "SASS", "Webpack", "Git"],
+			"isCurrentRole": false
+		}
+	]
+}

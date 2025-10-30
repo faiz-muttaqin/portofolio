@@ -1,0 +1,29 @@
+{
+  "contact": {
+    "title": "Get In Touch",
+    "subtitle": "I'm always interested in new opportunities and exciting projects. Let's discuss how we can work together.",
+    "email": "muttaqinfaiz@gmail.com",
+    "linkedin": "https://linkedin.com/in/faizmuttaqin",
+    "message": "Send Message"
+  },
+  "socialLinks": [
+    {
+      "platform": "Email",
+      "url": "mailto:muttaqinfaiz@gmail.com",
+      "icon": "fas fa-envelope",
+      "display": "muttaqinfaiz@gmail.com"
+    },
+    {
+      "platform": "LinkedIn",
+      "url": "https://linkedin.com/in/faizmuttaqin",
+      "icon": "fab fa-linkedin",
+      "display": "/in/faizmuttaqin"
+    },
+    {
+      "platform": "GitHub",
+      "url": "https://github.com/faiz-muttaqin",
+      "icon": "fab fa-github",
+      "display": "/faiz-muttaqin"
+    }
+  ]
+}
