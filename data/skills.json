@@ -1,38 +1,86 @@
 {
   "frontend": {
-    "title": "Frontend",
+    "title": "Frontend Development",
+    "icon": "fab fa-react",
+    "color": "#61DAFB",
     "skills": [
-      { "name": "React", "level": "Advanced" },
-      { "name": "TypeScript", "level": "Advanced" },
-      { "name": "JavaScript", "level": "Expert" },
-      { "name": "HTML5", "level": "Expert" },
-      { "name": "CSS3", "level": "Advanced" },
-      { "name": "Tailwind CSS", "level": "Advanced" },
-      { "name": "Vue.js", "level": "Intermediate" }
+      { "name": "React.js", "level": "Advanced", "icon": "fab fa-react", "color": "#61DAFB", "url": "https://react.dev" },
+      { "name": "TypeScript", "level": "Advanced", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg", "color": "#3178C6", "url": "https://www.typescriptlang.org" },
+      { "name": "JavaScript (ES6+)", "level": "Expert", "icon": "fab fa-js", "color": "#F7DF1E", "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript" },
+      { "name": "HTML5", "level": "Expert", "icon": "fab fa-html5", "color": "#E34F26", "url": "https://developer.mozilla.org/en-US/docs/Web/HTML" },
+      { "name": "CSS3", "level": "Expert", "icon": "fab fa-css3-alt", "color": "#1572B6", "url": "https://developer.mozilla.org/en-US/docs/Web/CSS" },
+      { "name": "Bootstrap 5", "level": "Expert", "icon": "fab fa-bootstrap", "color": "#7952B3", "url": "https://getbootstrap.com" },
+      { "name": "TailwindCSS", "level": "Advanced", "icon": "https://raw.githubusercontent.com/devicons/devicon/refs/tags/v2.17.0/icons/tailwindcss/tailwindcss-original.svg", "color": "#06B6D4", "url": "https://tailwindcss.com" },
+      { "name": "Shadcn UI", "level": "Advanced", "icon": "fas fa-cube", "color": "#000000", "url": "https://ui.shadcn.com" },
+      { "name": "jQuery", "level": "Advanced", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jquery/jquery-original.svg", "color": "#0769AD", "url": "https://jquery.com" }
     ]
   },
   "backend": {
-    "title": "Backend",
+    "title": "Backend & Server",
+    "icon": "fas fa-server",
+    "color": "#00ADD8",
     "skills": [
-      { "name": "Node.js", "level": "Advanced" },
-      { "name": "Python", "level": "Advanced" },
-      { "name": "Go", "level": "Intermediate" },
-      { "name": "PostgreSQL", "level": "Advanced" },
-      { "name": "MongoDB", "level": "Intermediate" },
-      { "name": "Express", "level": "Advanced" },
-      { "name": "GraphQL", "level": "Intermediate" }
+      { "name": "Go (Golang)", "level": "Advanced", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/go/go-original.svg", "color": "#00ADD8", "url": "https://go.dev" },
+      { "name": "Gin Framework", "level": "Advanced", "icon": "https://raw.githubusercontent.com/gin-gonic/logo/master/color.svg", "color": "#00ADD8", "url": "https://gin-gonic.com" },
+      { "name": "GORM", "level": "Advanced", "icon": "fas fa-database", "color": "#00ADD8", "url": "https://gorm.io" },
+      { "name": "PHP", "level": "Advanced", "icon": "fab fa-php", "color": "#777BB4", "url": "https://www.php.net" },
+      { "name": "Node.js", "level": "Intermediate", "icon": "fab fa-node-js", "color": "#339933", "url": "https://nodejs.org" },
+      { "name": "MySQL", "level": "Expert", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg", "color": "#4479A1", "url": "https://www.mysql.com" },
+      { "name": "PostgreSQL", "level": "Advanced", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg", "color": "#4169E1", "url": "https://www.postgresql.org" },
+      { "name": "Redis", "level": "Advanced", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg", "color": "#DC382D", "url": "https://redis.io" },
+      { "name": "REST API", "level": "Expert", "icon": "fas fa-plug", "color": "#009688", "url": "https://restfulapi.net" }
+    ]
+  },
+  "devops": {
+    "title": "DevOps & Infrastructure",
+    "icon": "fas fa-cogs",
+    "color": "#FCC624",
+    "skills": [
+      { "name": "Linux Server", "level": "Expert", "icon": "fab fa-linux", "color": "#FCC624", "url": "https://www.linux.org" },
+      { "name": "Docker", "level": "Advanced", "icon": "fab fa-docker", "color": "#2496ED", "url": "https://www.docker.com" },
+      { "name": "Git/GitHub", "level": "Expert", "icon": "fab fa-git-alt", "color": "#F05032", "url": "https://github.com" },
+      { "name": "SSH", "level": "Expert", "icon": "fas fa-terminal", "color": "#4D4D4D", "url": "https://www.openssh.com" },
+      { "name": "Cloudflare DNS", "level": "Advanced", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cloudflare/cloudflare-original.svg", "color": "#F38020", "url": "https://www.cloudflare.com" },
+      { "name": "Vercel", "level": "Advanced", "icon": "https://assets.vercel.com/image/upload/front/favicon/vercel/180x180.png", "color": "#000000", "url": "https://vercel.com" },
+      { "name": "GitHub Pages", "level": "Advanced", "icon": "fab fa-github", "color": "#181717", "url": "https://pages.github.com" },
+      { "name": "CI/CD", "level": "Advanced", "icon": "fas fa-sync-alt", "color": "#2088FF", "url": "https://www.redhat.com/en/topics/devops/what-is-ci-cd" }
+    ]
+  },
+  "realtime": {
+    "title": "Real-time & IoT",
+    "icon": "fas fa-bolt",
+    "color": "#660066",
+    "skills": [
+      { "name": "MQTT", "level": "Advanced", "icon": "fas fa-broadcast-tower", "color": "#660066", "url": "https://mqtt.org" },
+      { "name": "WebSocket", "level": "Advanced", "icon": "fas fa-exchange-alt", "color": "#010101", "url": "https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API" },
+      { "name": "Event-Driven Architecture", "level": "Advanced", "icon": "fas fa-project-diagram", "color": "#FF6B6B", "url": "https://aws.amazon.com/event-driven-architecture" },
+      { "name": "MikroTik API", "level": "Intermediate", "icon": "fas fa-network-wired", "color": "#293239", "url": "https://wiki.mikrotik.com/wiki/Manual:API" },
+      { "name": "Syncthing", "level": "Intermediate", "icon": "fas fa-sync", "color": "#0891D1", "url": "https://syncthing.net" }
+    ]
+  },
+  "mobile": {
+    "title": "Mobile Development",
+    "icon": "fas fa-mobile-alt",
+    "color": "#3DDC84",
+    "skills": [
+      { "name": "Android (Java)", "level": "Advanced", "icon": "fab fa-android", "color": "#3DDC84", "url": "https://developer.android.com" },
+      { "name": "Android Studio", "level": "Advanced", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/androidstudio/androidstudio-original.svg", "color": "#3DDC84", "url": "https://developer.android.com/studio" },
+      { "name": "WebView", "level": "Advanced", "icon": "fas fa-window-maximize", "color": "#3DDC84", "url": "https://developer.android.com/develop/ui/views/layout/webapps/webview" },
+      { "name": "Firebase", "level": "Intermediate", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg", "color": "#FFCA28", "url": "https://firebase.google.com" },
+      { "name": "React Native", "level": "Learning", "icon": "fab fa-react", "color": "#61DAFB", "url": "https://reactnative.dev" }
     ]
   },
   "tools": {
-    "title": "Tools & Cloud",
+    "title": "Tools & Libraries",
+    "icon": "fas fa-tools",
+    "color": "#007ACC",
     "skills": [
-      { "name": "Git", "level": "Expert" },
-      { "name": "Docker", "level": "Advanced" },
-      { "name": "AWS", "level": "Intermediate" },
-      { "name": "Vercel", "level": "Advanced" },
-      { "name": "Kubernetes", "level": "Intermediate" },
-      { "name": "CI/CD", "level": "Advanced" },
-      { "name": "Jest", "level": "Advanced" }
+      { "name": "VS Code", "level": "Expert", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg", "color": "#007ACC", "url": "https://code.visualstudio.com" },
+      { "name": "ApexCharts.js", "level": "Advanced", "icon": "fas fa-chart-line", "color": "#00E396", "url": "https://apexcharts.com" },
+      { "name": "DataTables.js", "level": "Advanced", "icon": "fas fa-table", "color": "#1F6FEB", "url": "https://datatables.net" },
+      { "name": "Leaflet Maps", "level": "Advanced", "icon": "fas fa-map-marked-alt", "color": "#199900", "url": "https://leafletjs.com" },
+      { "name": "JWT", "level": "Advanced", "icon": "fas fa-key", "color": "#000000", "url": "https://jwt.io" },
+      { "name": "Swagger/OpenAPI", "level": "Advanced", "icon": "https://static1.smartbear.co/swagger/media/assets/images/swagger_logo.svg", "color": "#85EA2D", "url": "https://swagger.io" }
     ]
   }
 }

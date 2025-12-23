@@ -2,64 +2,73 @@
 	"experiences": [
 		{
 			"id": 1,
-			"position": "Senior Full-Stack Developer",
-			"company": "TechCorp Solutions",
-			"period": "2023 - Present",
-			"location": "Remote",
+			"position": "Software Engineer / Backend Developer / DevOps Engineer",
+			"company": "PT Smartweb Indonesia Kreasi / PT Provision Teknologi Indonesia",
+			"period": "Oct 2022 - Present",
+			"location": "Jakarta, Indonesia",
 			"type": "Full-time",
 			"achievements": [
-				"Led development of e-commerce platform serving 500K+ users, reducing load times by 40%",
-				"Implemented secure payment processing system handling $2M+ monthly transactions",
-				"Mentored 3 junior developers and established code review best practices",
-				"Architected microservices infrastructure improving system scalability by 300%"
+				"Engineered MQTT/WebSocket infrastructure handling 500,000+ simultaneous device connections with <200ms response time",
+				"Migrated polling-based to event-driven architecture reducing server load by 85%",
+				"Developed Paxstorelite platform managing 5,000+ EDC devices, passing security audits from IT SEC ASIA, BRI Bank, and CIMB Bank",
+				"Built BI Debit Card Payment system processing 10,000+ daily transactions with BCA QRIS and Artajasa integration",
+				"Implemented AI/LLM-based merchant automation using Go and GPT, reducing processing time by 70% with 95% accuracy",
+				"Deployed BP Gas Station system across 500+ locations with robust remote update mechanisms",
+				"Developed Android WebView applications: USB Installer, ECR Launcher, Artajasa Launcher, Warung POS for EDC terminals",
+				"Maintained Linux servers with 99.9% uptime running PHP, Go, MySQL workloads and Docker containers"
 			],
 			"technologies": [
-				"React",
-				"Node.js",
-				"AWS",
+				"Go",
+				"Gin",
+				"GORM",
+				"MQTT",
+				"WebSocket",
+				"PHP",
+				"MySQL",
 				"PostgreSQL",
+				"Redis",
+				"Linux Server",
 				"Docker",
-				"Kubernetes"
+				"Android",
+				"JWT",
+				"REST API",
+				"AI/LLM"
 			],
 			"isCurrentRole": true
 		},
 		{
 			"id": 2,
-			"position": "Full Stack Developer",
-			"company": "WebAgency Pro",
-			"period": "2021 - 2023",
-			"location": "New York, NY",
-			"type": "Full-time",
+			"position": "Android Developer",
+			"company": "Tree Grower Community",
+			"period": "Aug 2019 - Oct 2019",
+			"location": "Bogor, Indonesia",
+			"type": "Part-time",
 			"achievements": [
-				"Built end-to-end web applications for enterprise clients, improving data visualization performance by 50%",
-				"Developed authentication system reducing login times by 35%",
-				"Collaborated with design team to implement responsive UI components",
-				"Optimized database queries resulting in 60% faster data retrieval"
+				"Built T-trees Android application with Firebase real-time database integration for community tree planting tracking",
+				"Implemented user authentication, data visualization, and community engagement features",
+				"Designed intuitive UI/UX following Material Design guidelines"
 			],
 			"technologies": [
-				"Vue.js",
-				"Express.js",
-				"MongoDB",
-				"Redis",
-				"PHP",
-				"MySQL"
+				"Android",
+				"Java",
+				"Firebase",
+				"Material Design"
 			],
 			"isCurrentRole": false
 		},
 		{
 			"id": 3,
-			"position": "Frontend Developer",
-			"company": "Digital Solutions Inc",
-			"period": "2019 - 2021",
-			"location": "Boston, MA",
-			"type": "Full-time",
+			"position": "Practicum Assistant - Programming Course",
+			"company": "IPB University (Institut Pertanian Bogor)",
+			"period": "Sep 2018 - Dec 2018",
+			"location": "Bogor, Indonesia",
+			"type": "Part-time",
 			"achievements": [
-				"Developed responsive websites for 20+ clients using modern frontend frameworks",
-				"Improved website performance scores by average of 45% using optimization techniques",
-				"Implemented accessibility standards achieving WCAG 2.1 AA compliance",
-				"Created reusable component library reducing development time by 30%"
+				"Mentored 50+ students in Java programming fundamentals and Android application development",
+				"Conducted practical lab sessions covering object-oriented programming, Android SDK, and mobile app architecture",
+				"Evaluated student projects and provided constructive feedback for skill improvement"
 			],
-			"technologies": ["JavaScript", "React", "SASS", "Webpack", "Git"],
+			"technologies": ["Java", "Android Development", "Android Studio", "OOP"],
 			"isCurrentRole": false
 		}
 	]

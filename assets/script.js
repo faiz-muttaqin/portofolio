@@ -7,6 +7,70 @@ $(document).ready(function () {
 	let experienceData = [];
 	let allProjects = [];
 
+	// Technology mapping with icons and URLs
+	const techMapping = {
+		// Frontend
+		"React": { icon: "fab fa-react", color: "#61DAFB", url: "https://react.dev" },
+		"React.js": { icon: "fab fa-react", color: "#61DAFB", url: "https://react.dev" },
+		"TypeScript": { icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg", color: "#3178C6", url: "https://www.typescriptlang.org" },
+		"JavaScript": { icon: "fab fa-js", color: "#F7DF1E", url: "https://developer.mozilla.org/en-US/docs/Web/JavaScript" },
+		"HTML5": { icon: "fab fa-html5", color: "#E34F26", url: "https://developer.mozilla.org/en-US/docs/Web/HTML" },
+		"CSS3": { icon: "fab fa-css3-alt", color: "#1572B6", url: "https://developer.mozilla.org/en-US/docs/Web/CSS" },
+		"Bootstrap": { icon: "fab fa-bootstrap", color: "#7952B3", url: "https://getbootstrap.com" },
+		"TailwindCSS": { icon: "https://raw.githubusercontent.com/devicons/devicon/refs/tags/v2.17.0/icons/tailwindcss/tailwindcss-original.svg", color: "#06B6D4", url: "https://tailwindcss.com" },
+		"Shadcn UI": { icon: "fas fa-cube", color: "#000000", url: "https://ui.shadcn.com" },
+		"jQuery": { icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jquery/jquery-original.svg", color: "#0769AD", url: "https://jquery.com" },
+		
+		// Backend
+		"Go": { icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/go/go-original.svg", color: "#00ADD8", url: "https://go.dev" },
+		"Gin": { icon: "https://raw.githubusercontent.com/gin-gonic/logo/master/color.svg", color: "#00ADD8", url: "https://gin-gonic.com" },
+		"GORM": { icon: "fas fa-database", color: "#00ADD8", url: "https://gorm.io" },
+		"PHP": { icon: "fab fa-php", color: "#777BB4", url: "https://www.php.net" },
+		"Node.js": { icon: "fab fa-node-js", color: "#339933", url: "https://nodejs.org" },
+		"MySQL": { icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg", color: "#4479A1", url: "https://www.mysql.com" },
+		"PostgreSQL": { icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg", color: "#4169E1", url: "https://www.postgresql.org" },
+		"Redis": { icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg", color: "#DC382D", url: "https://redis.io" },
+		"REST API": { icon: "fas fa-plug", color: "#009688", url: "https://restfulapi.net" },
+		
+		// DevOps
+		"Linux Server": { icon: "fab fa-linux", color: "#FCC624", url: "https://www.linux.org" },
+		"Docker": { icon: "fab fa-docker", color: "#2496ED", url: "https://www.docker.com" },
+		"Git": { icon: "fab fa-git-alt", color: "#F05032", url: "https://git-scm.com" },
+		"GitHub": { icon: "fab fa-github", color: "#181717", url: "https://github.com" },
+		"SSH": { icon: "fas fa-terminal", color: "#4D4D4D", url: "https://www.openssh.com" },
+		"Vercel": { icon: "https://assets.vercel.com/image/upload/front/favicon/vercel/180x180.png", color: "#000000", url: "https://vercel.com" },
+		"GitHub Pages": { icon: "fab fa-github", color: "#181717", url: "https://pages.github.com" },
+		"Alpine Linux": { icon: "fab fa-linux", color: "#0D597F", url: "https://alpinelinux.org" },
+		"CI/CD": { icon: "fas fa-sync-alt", color: "#2088FF", url: "https://www.redhat.com/en/topics/devops/what-is-ci-cd" },
+		
+		// Real-time & IoT
+		"MQTT": { icon: "fas fa-broadcast-tower", color: "#660066", url: "https://mqtt.org" },
+		"WebSocket": { icon: "fas fa-exchange-alt", color: "#010101", url: "https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API" },
+		"WebRTC": { icon: "fas fa-video", color: "#333333", url: "https://webrtc.org" },
+		"MikroTik API": { icon: "fas fa-network-wired", color: "#293239", url: "https://wiki.mikrotik.com/wiki/Manual:API" },
+		"Syncthing": { icon: "fas fa-sync", color: "#0891D1", url: "https://syncthing.net" },
+		
+		// Tools & Libraries
+		"Vite": { icon: "https://vitejs.dev/logo.svg", color: "#646CFF", url: "https://vitejs.dev" },
+		"Leaflet Maps": { icon: "fas fa-map-marked-alt", color: "#199900", url: "https://leafletjs.com" },
+		"JWT": { icon: "fas fa-key", color: "#000000", url: "https://jwt.io" },
+		"Swagger": { icon: "https://static1.smartbear.co/swagger/media/assets/images/swagger_logo.svg", color: "#85EA2D", url: "https://swagger.io" },
+		"Context API": { icon: "fab fa-react", color: "#61DAFB", url: "https://react.dev/reference/react/useContext" },
+		"React Router": { icon: "fab fa-react", color: "#CA4245", url: "https://reactrouter.com" },
+		"Weather API": { icon: "fas fa-cloud-sun", color: "#4A90E2", url: "https://openweathermap.org/api" },
+		"Geolocation API": { icon: "fas fa-map-marker-alt", color: "#EA4335", url: "https://developer.mozilla.org/en-US/docs/Web/API/Geolocation_API" },
+		"WhatsApp API": { icon: "fab fa-whatsapp", color: "#25D366", url: "https://developers.facebook.com/docs/whatsapp" },
+		"LLM/GPT": { icon: "fas fa-brain", color: "#10A37F", url: "https://openai.com" },
+		"Prompt Engineering": { icon: "fas fa-comment-dots", color: "#10A37F", url: "https://platform.openai.com/docs/guides/prompt-engineering" },
+		
+		// Other
+		"Atomic Design": { icon: "fas fa-atom", color: "#5C6AC4", url: "https://atomicdesign.bradfrost.com" },
+		"rsync": { icon: "fas fa-sync-alt", color: "#0066CC", url: "https://rsync.samba.org" },
+		"fsnotify": { icon: "fas fa-eye", color: "#00ADD8", url: "https://github.com/fsnotify/fsnotify" },
+		"systemd": { icon: "fas fa-cogs", color: "#30D475", url: "https://systemd.io" },
+		"Logrus": { icon: "fas fa-file-alt", color: "#00ADD8", url: "https://github.com/sirupsen/logrus" }
+	};
+
 	// Initialize the portfolio
 	init();
 
@@ -190,20 +254,43 @@ $(document).ready(function () {
 
 		Object.keys(skillsData).forEach((category, index) => {
 			const skillCategory = skillsData[category];
+			
+			// Render category icon if available
+			const categoryIconHtml = skillCategory.icon 
+				? skillCategory.icon.startsWith('http') 
+					? `<img src="${skillCategory.icon}" alt="${skillCategory.title}" style="width: 32px; height: 32px; margin-right: 10px; vertical-align: middle;" />`
+					: `<i class="${skillCategory.icon}" style="font-size: 32px; color: ${skillCategory.color}; margin-right: 10px;"></i>`
+				: '';
+			
 			const col = $(`
                 <div class="col-lg-4 col-md-6 mb-4">
                     <div class="skill-card text-center fade-in" style="animation-delay: ${
 											index * 0.2
 										}s">
-                        <h4 class="fw-bold mb-4">${skillCategory.title}</h4>
+                        <h4 class="fw-bold mb-4">${categoryIconHtml}${skillCategory.title}</h4>
                         <div class="skills-list">
                             ${skillCategory.skills
-															.map(
-																(skill, skillIndex) =>
-																	`<span class="skill-tag" style="animation-delay: ${
+															.map((skill, skillIndex) => {
+																const iconHtml = skill.icon 
+																	? skill.icon.startsWith('http')
+																		? `<img src="${skill.icon}" alt="${skill.name}" style="width: 20px; height: 20px; margin-right: 6px; vertical-align: middle;" />`
+																		: `<i class="${skill.icon}" style="color: ${skill.color}; margin-right: 6px;"></i>`
+																	: '';
+																
+																const skillUrl = skill.url || '';
+																const skillContent = `${iconHtml}${skill.name}`;
+																
+																// If URL exists, wrap in clickable link
+																if (skillUrl) {
+																	return `<a href="${skillUrl}" target="_blank" rel="noopener noreferrer" class="skill-tag-link" style="animation-delay: ${
 																		index * 0.2 + skillIndex * 0.1
-																	}s">${skill.name}</span>`
-															)
+																	}s; border-left: 3px solid ${skill.color || '#007bff'}; text-decoration: none; display: inline-block;" title="Visit ${skill.name} official website">${skillContent}</a>`;
+																} else {
+																	return `<span class="skill-tag" style="animation-delay: ${
+																		index * 0.2 + skillIndex * 0.1
+																	}s; border-left: 3px solid ${skill.color || '#007bff'};">${skillContent}</span>`;
+																}
+															})
 															.join("")}
                         </div>
                     </div>
@@ -279,12 +366,21 @@ $(document).ready(function () {
                                 <div class="impact-text">${project.impact}</div>
                             </div>
                             
-                            <div class="mb-3">
+                            <div class="mb-3 d-flex flex-wrap gap-2">
                                 ${project.technologies
-																	.map(
-																		(tech) =>
-																			`<span class="tech-badge">${tech}</span>`
-																	)
+																	.map((tech) => {
+																		const techInfo = techMapping[tech];
+																		if (techInfo) {
+																			const iconHtml = techInfo.icon.startsWith('http')
+																				? `<img src="${techInfo.icon}" alt="${tech}" style="width: 18px; height: 18px; margin-right: 6px; vertical-align: middle;" />`
+																				: `<i class="${techInfo.icon}" style="color: ${techInfo.color}; margin-right: 6px;"></i>`;
+																			
+																			return `<a href="${techInfo.url}" target="_blank" rel="noopener noreferrer" class="tech-badge-link" title="Learn more about ${tech}" style="border-left: 3px solid ${techInfo.color};">${iconHtml}${tech}</a>`;
+																		} else {
+																			// Fallback for technologies without mapping
+																			return `<span class="tech-badge">${tech}</span>`;
+																		}
+																	})
 																	.join("")}
                             </div>
                             
@@ -293,14 +389,18 @@ $(document).ready(function () {
                                     <a href="${
 																			project.demoUrl
 																		}" class="btn btn-primary btn-sm flex-fill" ${
-				project.demoUrl === "#" ? 'onclick="return false;"' : ""
+				(!project.demoUrl || project.demoUrl === "#" || project.demoUrl === "") 
+					? 'disabled aria-disabled="true"' 
+					: 'target="_blank" rel="noopener noreferrer"'
 			}>
                                         <i class="fas fa-external-link-alt me-1"></i> Live Demo
                                     </a>
                                     <a href="${
 																			project.codeUrl
 																		}" class="btn btn-outline-secondary btn-sm flex-fill" ${
-				project.codeUrl === "#" ? 'onclick="return false;"' : ""
+				(!project.codeUrl || project.codeUrl === "#" || project.codeUrl === "") 
+					? 'disabled aria-disabled="true"' 
+					: 'target="_blank" rel="noopener noreferrer"'
 			}>
                                         <i class="fab fa-github me-1"></i> Code
                                     </a>
@@ -432,7 +532,7 @@ $(document).ready(function () {
                             <h5 class="fw-bold">${link.platform}</h5>
                             <a href="${
 															link.url
-														}" class="text-decoration-none" target="_blank">${
+														}" class="text-decoration-none" target="_blank" rel="noopener noreferrer">${
 											link.display
 										}</a>
                         </div>

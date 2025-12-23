@@ -3,7 +3,21 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Faiz Muttaqin - Full-Stack Developer</title>
+		<title>Faiz Muttaqin - Backend & DevOps Engineer</title>
+		<meta name="description" content="Backend Developer specializing in Go, MQTT/WebSocket (500K+ connections), React, and DevOps. Building scalable IoT payment systems and enterprise applications." />
+		
+		<!-- Open Graph / Social Media Meta Tags -->
+		<meta property="og:type" content="website" />
+		<meta property="og:title" content="Faiz Muttaqin - Backend & DevOps Engineer" />
+		<meta property="og:description" content="Software Engineer at PT Smartweb Indonesia specializing in Go, MQTT/WebSocket infrastructure, and real-time IoT systems." />
+		<meta property="og:url" content="https://faizmuttaqin.com" />
+		<meta property="og:image" content="https://faizmuttaqin.com/assets/img/og-preview.jpg" />
+		
+		<!-- Twitter Card Meta Tags -->
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:title" content="Faiz Muttaqin - Backend & DevOps Engineer" />
+		<meta name="twitter:description" content="Backend Developer specializing in Go, MQTT/WebSocket (500K+ connections), React, and DevOps." />
+		<meta name="twitter:image" content="https://faizmuttaqin.com/assets/img/og-preview.jpg" />
 		
 		<!-- Favicon -->
 		<link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
@@ -69,13 +83,11 @@
 						<li class="nav-item">
 							<a class="nav-link" href="#contact">Contact</a>
 						</li>
-						<li class="nav-item mt-1" title="Click the sun or moon to toggle theme">
-							<button data-time="day" class="m-2" id="button-wrapper"  onclick="toggleButton()">
-								<span id="button"></span>
-								<canvas id="stars"></canvas>
-							</button>
-
-							<label for="scale" class="d-none">
+					<li class="nav-item mt-1">
+						<button data-time="day" class="m-2" id="button-wrapper" onclick="toggleButton()" aria-label="Toggle dark mode" title="Click the sun or moon to toggle theme">
+							<span id="button"></span>
+							<canvas id="stars"></canvas>
+						</button>							<label for="scale" class="d-none">
 								<span id="scale-value">3</span>
 								<input
 									type="range"
@@ -142,40 +154,40 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-8 mx-auto text-center my-5">
-						<h2 class="display-5 fw-bold mb-4">About Me</h2>
-						<p class="mb-4">
-							With 5+ years of experience in full-stack development, I
-							specialize in building modern web applications that solve real
-							business problems. My expertise spans from responsive frontend
-							interfaces to scalable backend architectures.
-						</p>
-						<p class="mb-5">
-							I'm passionate about writing clean, maintainable code and
-							delivering measurable results. Whether it's reducing load times by
-							40% or processing millions of transactions, I focus on creating
-							solutions that drive business value.
-						</p>
+					<h2 class="display-5 fw-bold mb-4">About Me</h2>
+					<p class="mb-4">
+						With 3+ years of experience in backend development and DevOps, I
+						specialize in building scalable IoT payment systems and enterprise applications.
+						My expertise spans from high-concurrency MQTT/WebSocket infrastructure
+						(500K+ connections) to modern React frontends and Linux server administration.
+					</p>
+					<p class="mb-5">
+						I'm passionate about writing clean, maintainable code and
+						delivering measurable results. Whether it's reducing server load by
+						85% or handling 500K+ simultaneous connections, I focus on creating
+						performant solutions that drive business value.
+					</p>
 
-						<!-- Stats -->
-						<div class="row g-4 mb-5">
-							<div class="col-md-4">
-								<div class="text-center">
-									<h3 class="display-6 fw-bold text-primary mb-2">5+</h3>
-									<p class="text-muted mb-0">Years Experience</p>
-								</div>
+					<!-- Stats -->
+					<div class="row g-4 mb-5">
+						<div class="col-md-4">
+							<div class="text-center">
+								<h3 class="display-6 fw-bold text-primary mb-2">3+</h3>
+								<p class="text-muted mb-0">Years Experience</p>
 							</div>
-							<div class="col-md-4">
-								<div class="text-center">
-									<h3 class="display-6 fw-bold text-primary mb-2">50+</h3>
-									<p class="text-muted mb-0">Projects Completed</p>
-								</div>
+						</div>
+						<div class="col-md-4">
+							<div class="text-center">
+								<h3 class="display-6 fw-bold text-primary mb-2">500K+</h3>
+								<p class="text-muted mb-0">Concurrent Connections</p>
 							</div>
-							<div class="col-md-4">
-								<div class="text-center">
-									<h3 class="display-6 fw-bold text-primary mb-2">99.9%</h3>
-									<p class="text-muted mb-0">Uptime Achieved</p>
-								</div>
+						</div>
+						<div class="col-md-4">
+							<div class="text-center">
+								<h3 class="display-6 fw-bold text-primary mb-2">5K+</h3>
+								<p class="text-muted mb-0">EDC Devices Managed</p>
 							</div>
+						</div>
 						</div>
 					</div>
 				</div>
@@ -222,13 +234,13 @@
 								placeholder="Search projects... "
 							/>
 							<button
-								class="btn btn-outline-secondary"
-								type="button"
-								id="clearSearch"
-							>
-								<i class="fas fa-times"></i> / 
-                                <p class="btn border border-2 p-1 rounded-1 m-0">Esc</p>
-							</button>
+							class="btn btn-outline-secondary"
+							type="button"
+							id="clearSearch"
+							aria-label="Clear search"
+						>
+							<i class="fas fa-times"></i> <span class="d-none d-sm-inline">/ <span class="btn border border-2 p-1 rounded-1">Esc</span></span>
+						</button>
 						</div>
 					</div>
 				</div>
