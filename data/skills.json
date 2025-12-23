@@ -76,6 +76,8 @@
     "color": "#007ACC",
     "skills": [
       { "name": "VS Code", "level": "Expert", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg", "color": "#007ACC", "url": "https://code.visualstudio.com" },
+      { "name": "Postman", "level": "Advanced", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postman/postman-original.svg", "color": "#FF6C37", "url": "https://www.postman.com" },
+      { "name": "Slack", "level": "Advanced", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/slack/slack-original.svg", "color": "#4A154B", "url": "https://slack.com" },
       { "name": "ApexCharts.js", "level": "Advanced", "icon": "fas fa-chart-line", "color": "#00E396", "url": "https://apexcharts.com" },
       { "name": "DataTables.js", "level": "Advanced", "icon": "fas fa-table", "color": "#1F6FEB", "url": "https://datatables.net" },
       { "name": "Leaflet Maps", "level": "Advanced", "icon": "fas fa-map-marked-alt", "color": "#199900", "url": "https://leafletjs.com" },
