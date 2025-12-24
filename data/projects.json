@@ -7,9 +7,9 @@
     "technologies": ["Go", "Gin", "GORM", "React", "TypeScript", "Shadcn UI", "TailwindCSS", "Redis"],
     "impact": "60% dev time reduction, auto-generated API docs, ⭐ 2 GitHub stars",
     "category": "Full Stack Development",
-    "demoUrl": "",
+    "demoUrl": "https://microblog.faizmuttaqin.com/",
     "codeUrl": "https://github.com/faiz-muttaqin/shadcn-go-starter",
-    "imageUrl": "https://via.placeholder.com/300x200/6366f1/ffffff?text=Admin+Dashboard"
+    "imageUrl": "/assets/img/shadcn_dashboard.png"
   },
   {
     "id": 2,
@@ -20,8 +20,8 @@
     "impact": "500K+ concurrent connections, 85% load reduction, <200ms response",
     "category": "IoT & Real-Time",
     "demoUrl": "https://rm.klevertms.com",
-    "codeUrl": "",
-    "imageUrl": "https://via.placeholder.com/300x200/10b981/ffffff?text=IoT+Platform"
+    "codeUrl": "https://gitlab.com/muttaqinfaiz/server",
+    "imageUrl": "/assets/img/soundbox_iot.jpg"
   },
   {
     "id": 3,
@@ -32,8 +32,8 @@
     "impact": "5,000+ devices managed, security audits passed, 99.9% uptime",
     "category": "Enterprise System",
     "demoUrl": "https://rm.klevertms.com/paxstorelite/login",
-    "codeUrl": "",
-    "imageUrl": "https://via.placeholder.com/300x200/f59e0b/ffffff?text=EDC+Management"
+    "codeUrl": "https://gitlab.com/muttaqinfaiz/paxstorelite",
+    "imageUrl": "/assets/img/paxstorelite.png"
   },
   {
     "id": 4,
@@ -45,7 +45,7 @@
     "category": "DevOps & Monitoring",
     "demoUrl": "",
     "codeUrl": "https://github.com/faiz-muttaqin/server_monitor",
-    "imageUrl": "https://via.placeholder.com/300x200/ef4444/ffffff?text=Monitoring"
+    "imageUrl": "/assets/img/server_monitor.png"
   },
   {
     "id": 5,
@@ -57,7 +57,7 @@
     "category": "DevOps Automation",
     "demoUrl": "",
     "codeUrl": "https://github.com/faiz-muttaqin/auto_backup_to_remote_server_via_ssh",
-    "imageUrl": "https://via.placeholder.com/300x200/8b5cf6/ffffff?text=Backup+System"
+    "imageUrl": "/assets/img/auto_backup.png"
   },
   {
     "id": 6,
@@ -69,7 +69,7 @@
     "category": "Frontend Web",
     "demoUrl": "https://faizmuttaqin.com",
     "codeUrl": "https://github.com/faiz-muttaqin/portofolio",
-    "imageUrl": "https://via.placeholder.com/300x200/3b82f6/ffffff?text=Portfolio"
+    "imageUrl": "/assets/img/portofolio.png"
   },
   {
     "id": 7,
@@ -81,11 +81,11 @@
     "category": "Full Stack Web",
     "demoUrl": "https://nomo-forum-app.faizmuttaqin.com/",
     "codeUrl": "https://github.com/faiz-muttaqin/nomo-forum-app",
-    "imageUrl": "https://via.placeholder.com/300x200/ec4899/ffffff?text=Forum+App"
+    "imageUrl": "/assets/img/nomo-forum-app.png"
   },
   {
     "id": 8,
-    "title": "AI Merchant Automation System",
+    "title": "AI Merchant Registration Automation System",
     "subtitle": "LLM-Powered Merchant Onboarding with WhatsApp Integration",
     "description": "AI-based automation using LLM (GPT) and Go for merchant onboarding via WhatsApp bot. Features prompt engineering for parsing unstructured messages, AI customer service, and natural language transaction queries.",
     "technologies": ["Go", "LLM/GPT", "WhatsApp API", "MySQL", "Redis", "Prompt Engineering"],
@@ -93,7 +93,7 @@
     "category": "AI Automation",
     "demoUrl": "",
     "codeUrl": "",
-    "imageUrl": "https://via.placeholder.com/300x200/14b8a6/ffffff?text=AI+Automation"
+    "imageUrl": "/assets/img/chatbot.png"
   },
   {
     "id": 9,
@@ -103,9 +103,9 @@
     "technologies": ["React", "JavaScript", "Context API", "React Router", "REST API"],
     "impact": "50% dev time reduction, reusable components, i18n support",
     "category": "Frontend React",
-    "demoUrl": "",
+    "demoUrl": "https://personal-notes.faizmuttaqin.com/",
     "codeUrl": "https://github.com/faiz-muttaqin/personal-notes",
-    "imageUrl": "https://via.placeholder.com/300x200/f97316/ffffff?text=Notes+App"
+    "imageUrl": "/assets/img/personal_notes.png"
   },
   {
     "id": 10,
@@ -117,7 +117,7 @@
     "category": "Frontend TypeScript",
     "demoUrl": "https://weather-app.faizmuttaqin.com",
     "codeUrl": "https://github.com/faiz-muttaqin/weather-app",
-    "imageUrl": "https://weather-app.faizmuttaqin.com"
+    "imageUrl": "/assets/img/weather-app.png"
   },
   {
     "id": 11,
@@ -129,7 +129,7 @@
     "category": "Frontend React",
     "demoUrl": "https://technotify-7.faizmuttaqin.com",
     "codeUrl": "https://github.com/faiz-muttaqin/technotify-7",
-    "imageUrl": "https://via.placeholder.com/300x200/a855f7/ffffff?text=Landing+Page"
+    "imageUrl": "/assets/img/technotify-7.png"
   },
   {
     "id": 12,
